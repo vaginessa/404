@@ -1,2 +1,2 @@
 # 404
-my personal 404 Page Not Found page
+A very NSFW 404 Page Not Found page
