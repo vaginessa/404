@@ -34,15 +34,28 @@
           text-align: right;
       }
 
-      .logo-text {
-        font-family: 'Poppins', sans-serif;
-        font-size: xx-large;
-      }
-
+      @media screen and (min-width : 800px) {
       .author-text {
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         font-size: medium;
       }
+      .logo-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: xx-large;
+      }
+      }
+
+      @media screen and (max-width : 800px) {
+      .author-text {
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: small;
+      }
+      .logo-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: large;
+      }
+      }
+
     </style>
   
     <title>404 Page Not Found</title>
