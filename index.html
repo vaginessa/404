@@ -19,7 +19,7 @@
       }
       
       .bg {
-          background-image: url("backg.jpg");
+          background-color: #000000;          
           height: 100%; 
           background-position: center;
           background-repeat: no-repeat;
@@ -60,12 +60,18 @@
   
     <title>404 Page Not Found</title>
 
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
-         (adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "ca-pub-8624647299902786",
-              enable_page_level_ads: true
-         });
+
+      Number.prototype.pad = function(size) {
+        var s = String(this);
+        while (s.length < (size || 2)) { s = "0" + s; }
+        return s;
+      }
+
+      window.onload = function() {
+        var index = Math.floor(Math.random()*3)+1;
+        document.getElementById("main").style.backgroundImage = "url(backg-"+ index.pad(3) +".jpg)";
+      };
     </script>
 
   </head>
