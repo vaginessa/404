@@ -9,55 +9,9 @@
     <meta name="author" content="daniele.olmisani@gmail.com">
 
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed|Poppins">
+    <link rel="stylesheet" href="404.css">
 
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed|Poppins" rel="stylesheet">
-
-    <style>
-      body, html {
-          height: 100%;
-          margin: 0;
-      }
-      
-      .bg {
-          background-color: #000000;          
-          height: 100%; 
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-      }
-
-      .info-panel {
-          position: absolute;
-          top: 5mm;
-          right: 5mm;
-          color: tan;
-          text-align: right;
-      }
-
-      @media all and (min-width : 640px) {
-      .author-text {
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        font-size: medium;
-      }
-      .logo-text {
-        font-family: 'Poppins', sans-serif;
-        font-size: xx-large;
-      }
-      }
-
-      @media all and (max-width : 640px) {
-      .author-text {
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        font-size: x-small;
-      }
-      .logo-text {
-        font-family: 'Poppins', sans-serif;
-        font-size: large;
-      }
-      }
-
-    </style>
-  
     <title>404 Page Not Found</title>
 
     <script>
@@ -69,11 +23,20 @@
       }
 
       window.onload = function() {
-        var index = Math.floor(Math.random()*3)+1;
+        var index = Math.floor(Math.random()*5)+1;
         document.getElementById("main").style.backgroundImage = "url(backg-"+ index.pad(3) +".jpg)";
       };
     </script>
 
+    <!--
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8624647299902786",
+              enable_page_level_ads: true
+         });
+    </script>
+    -->
   </head>
 
   <body>
