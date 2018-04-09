@@ -16,7 +16,8 @@
 
     <script>
 
-      var MAX_INDEX = 6;
+      const MAX_INDEX = 1;
+      var lastIndex = -1;
 
       Number.prototype.pad = function(size) {
         var s = String(this);
@@ -26,13 +27,19 @@
 
       window.onclick =
       window.onload  = function() {
-        var index = Math.floor(Math.random()*MAX_INDEX)+1;
+
+        var index = -1;
+        do {
+          index = Math.floor(Math.random()*MAX_INDEX)+1; 
+        } while (index == lastIndex);
+
         document
           .getElementById("main")
-          .style.backgroundImage = "url(backg-"+ index.pad(3) +".jpg)";
+          .style.backgroundImage = "url(art/backg-"+ index.pad(3) +".jpg)";
+
+        lastIndex = index;
       };
     </script>
-
     
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -63,5 +70,8 @@
       gtag('config', 'UA-2643168-17');
     </script>
 
+    <!--
+    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    -->
   </body>
 </html>
